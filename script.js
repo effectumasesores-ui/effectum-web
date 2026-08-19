@@ -83,8 +83,41 @@ document.addEventListener('click', (event) => {
   }));
 });
 
-document.querySelector('#lead-form')?.addEventListener('submit', () => {
-  document.dispatchEvent(new CustomEvent('effectum:lead', {
-    detail: { event: 'form_submit' }
-  }));
+const leadForm = document.querySelector('#lead-form');
+
+leadForm?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const submitButton = leadForm.querySelector('button[type="submit"]');
+  const status = leadForm.querySelector('[data-form-status]');
+  const initialLabel = submitButton?.innerHTML;
+
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando…';
+  }
+  if (status) status.textContent = 'Enviando tu consulta…';
+
+  try {
+    const response = await fetch(leadForm.action, {
+      method: 'POST',
+      body: new FormData(leadForm),
+      headers: { Accept: 'application/json' }
+    });
+
+    if (!response.ok) throw new Error('form_submission_failed');
+
+    leadForm.reset();
+    if (status) status.textContent = 'Gracias. Hemos recibido tu consulta y te responderemos lo antes posible.';
+    document.dispatchEvent(new CustomEvent('effectum:lead', {
+      detail: { event: 'form_submit' }
+    }));
+  } catch {
+    if (status) status.textContent = 'No hemos podido enviar la consulta. Puedes escribirnos a effectum.asesores@gmail.com.';
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.innerHTML = initialLabel;
+    }
+  }
 });

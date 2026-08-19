@@ -639,6 +639,7 @@ h2 {
 .direct-contact strong { font-size: 14px; overflow-wrap: anywhere; }
 
 .lead-form { display: grid; gap: 19px; border-top: 1px solid var(--ink); padding-top: 28px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .lead-form label { color: var(--graphite); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .lead-form label small { font-size: 10px; font-weight: 400; letter-spacing: 0; text-transform: none; }

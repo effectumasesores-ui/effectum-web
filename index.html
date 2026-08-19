@@ -314,9 +314,9 @@
             </div>
           </div>
 
-          <!-- TODO: conectar endpoint real de Formspree antes de producción. Sustituir el mailto por https://formspree.io/f/ID_REAL. -->
-          <form id="lead-form" class="lead-form" action="mailto:effectum.asesores@gmail.com" method="post" enctype="text/plain" data-formspree-pending="true" data-reveal="rise">
+          <form id="lead-form" class="lead-form" action="https://formspree.io/f/xeerzgpw" method="post" data-reveal="rise">
             <input type="hidden" name="_subject" value="Nueva consulta desde la web de Effectum">
+            <input class="visually-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-row">
               <label>Nombre<input required name="nombre" autocomplete="name"></label>
               <label>Email<input required type="email" name="email" autocomplete="email"></label>
@@ -329,7 +329,7 @@
             <label>Cuéntanos brevemente<textarea required name="mensaje" rows="4"></textarea></label>
             <label class="consent"><input required type="checkbox" name="privacidad"><span>He leído la <a href="privacidad.html">política de privacidad</a>.</span></label>
             <button class="button button-primary" type="submit">Enviar consulta <span aria-hidden="true">↗</span></button>
-            <p class="form-note">Versión de desarrollo: actualmente abre tu aplicación de correo. El endpoint real de Formspree debe conectarse antes de publicar.</p>
+            <p class="form-note" data-form-status aria-live="polite">Tus datos se envían de forma segura. Te responderemos lo antes posible.</p>
           </form>
         </div>
 
