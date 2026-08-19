@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Permite que Gemini pueda usar el contenido rastreado para sus funciones de IA.
+# Este token no afecta a la indexación ni al posicionamiento en Google Search.
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://effectumasesores.com/sitemap.xml
