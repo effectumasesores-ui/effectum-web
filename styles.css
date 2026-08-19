@@ -748,6 +748,11 @@ h2 {
 .cookie-notice-button:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
 .cookie-notice-button.is-primary { border-color: var(--white); background: var(--white); color: var(--ink); }
 .cookie-notice-button.is-primary:hover { background: rgba(255,255,255,.88); }
+.cookie-setting { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 11px 0; border-top: 1px solid rgba(255,255,255,.2); color: var(--white); cursor: pointer; }
+.cookie-setting span { display: grid; gap: 3px; }
+.cookie-setting strong { font-size: 12px; }
+.cookie-setting small { color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.4; }
+.cookie-setting input { width: 18px; height: 18px; accent-color: var(--white); }
 
 /* Legal pages */
 .legal-page main { min-height: 80vh; padding: calc(var(--header-height) + 70px) 0 100px; }

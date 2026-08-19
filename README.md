@@ -16,4 +16,4 @@ Sitio estático sin framework ni dependencias de ejecución, construido con HTML
 - `robots.txt` y `sitemap.xml`: descubrimiento técnico.
 - `aviso-legal.html`, `privacidad.html` y `cookies.html`: plantillas pendientes de datos legales reales.
 
-Puede abrirse con cualquier servidor HTTP estático. El formulario utiliza temporalmente `mailto:` y debe conectarse a un sistema seguro antes de publicar.
+Puede abrirse con cualquier servidor HTTP estático. El formulario de contacto se procesa mediante Formspree.
