@@ -75,6 +75,7 @@
   };
 
   const showPanel = (notice, choice) => {
+    notice.querySelector('.cookie-notice')?.classList.add('is-settings');
     notice.querySelector('.cookie-notice').innerHTML = panelContent(choice);
     notice.querySelector('[data-cookie-save]')?.addEventListener('click', () => {
       rememberConsent(Boolean(notice.querySelector('[data-analytics-toggle]')?.checked));
