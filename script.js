@@ -1,4 +1,5 @@
-// TODO ANALYTICS: conectar proveedor de analítica y mapear data-event cuando se decida la herramienta y el modelo de consentimiento.
+// Analytics se carga desde cookie-consent.js únicamente después del consentimiento.
+// Estos eventos dejan una nomenclatura estable para el futuro enrutamiento de conversiones.
 const header = document.querySelector('[data-header]');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#main-nav');
