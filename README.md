@@ -11,9 +11,9 @@ Sitio estático sin framework ni dependencias de ejecución, construido con HTML
 - `public/effectum-logo-horizontal.png`: recorte transparente del mismo activo, sin deformación, optimizado para cabecera y footer.
 - `public/hero-panorama.webp`: arte panorámico principal.
 - `public/cause-effect.webp`: arte de causa y efecto usado en el método.
-- `public/alfredo.webp`: fotografía real de Alfredo.
+- `public/alfredo-profile.webp`: fotografía de perfil de Alfredo, optimizada para la sección “Quién está detrás”.
 - `public/fonts/`: Playfair Display e Inter servidas localmente.
 - `robots.txt` y `sitemap.xml`: descubrimiento técnico.
-- `aviso-legal.html`, `privacidad.html` y `cookies.html`: plantillas pendientes de datos legales reales.
+- `aviso-legal.html`, `privacidad.html` y `cookies.html`: información legal y de privacidad vigente del sitio.
 
 Puede abrirse con cualquier servidor HTTP estático. El formulario de contacto se procesa mediante Formspree.
