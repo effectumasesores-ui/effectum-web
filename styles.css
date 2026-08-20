@@ -411,7 +411,6 @@ h2 {
 .situation-row p { margin: 2px 0 0; color: var(--graphite); font-size: 14px; }
 .row-arrow { justify-self: end; transition: transform .25s ease; }
 .situation-row:hover .row-arrow { transform: translate(4px, -4px); }
-.section-cta { margin-top: 34px; }
 
 /* Control */
 .control { background: var(--paper-alt); border-block: 1px solid var(--line-light); }
