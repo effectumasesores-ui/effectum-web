@@ -84,6 +84,15 @@ document.addEventListener('click', (event) => {
   }));
 });
 
+// Enviar los eventos de intención a GA4 solo cuando cookie-consent.js haya
+// cargado gtag tras una autorización analítica. Sin consentimiento no se
+// transmite ningún evento.
+document.addEventListener('effectum:lead', ({ detail }) => {
+  const eventName = detail?.event;
+  if (!eventName || typeof window.gtag !== 'function') return;
+  window.gtag('event', eventName, { method: 'website' });
+});
+
 const leadForm = document.querySelector('#lead-form');
 
 leadForm?.addEventListener('submit', async (event) => {
