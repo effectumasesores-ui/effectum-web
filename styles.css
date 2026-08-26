@@ -423,10 +423,14 @@ h2 {
   margin-bottom: clamp(56px, 7vw, 94px);
 }
 
-.section-head > div > p { max-width: 660px; margin: 28px 0 0; color: var(--graphite); font-size: 18px; }
+.section-head > .services-copy > p { max-width: 660px; margin: 28px 0 0; color: var(--graphite); font-size: 18px; }
 .section-head h2 { max-width: 9ch; }
 .section-head.compact { align-items: end; }
 .section-head.compact h2 { max-width: 11ch; }
+.services-head { grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr); }
+.services-lead .eyebrow { margin-bottom: 28px; }
+.services-image { width: min(100%, 480px); margin: 0; overflow: hidden; border: 1px solid var(--line-light); border-radius: 2px; background: var(--paper); aspect-ratio: 4 / 3; }
+.services-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 58%; }
 
 .service-list { border-top: 1px solid var(--ink); }
 
@@ -461,6 +465,9 @@ h2 {
 .order-copy > p:not(.eyebrow) { max-width: 650px; margin: 28px 0 0; color: var(--graphite); font-size: 18px; }
 .order-copy .button { margin-top: 30px; }
 .order-followup { display: flex; width: max-content; margin-top: 20px; }
+.order-visual { display: grid; gap: 36px; align-content: start; }
+.order-image { width: 100%; margin: 0; overflow: hidden; border: 1px solid var(--line-light); border-radius: 2px; background: var(--paper); aspect-ratio: 4 / 3; }
+.order-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; }
 .order-note { border: 1px solid var(--line); padding: 30px; background: var(--paper-alt); box-shadow: 18px 22px 0 rgba(81,109,115,.08); }
 .order-note .eyebrow { margin-bottom: 30px; }
 .order-note ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -524,7 +531,6 @@ h2 {
 .method-steps li > span { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .14em; }
 .method-steps h3 { margin: 0 0 6px; font-size: 30px; line-height: 1; }
 .method-steps p { max-width: 560px; margin: 0; color: var(--graphite); font-size: 14px; }
-
 /* About */
 .about { background: var(--paper-alt); }
 
@@ -878,6 +884,8 @@ h2 {
   .order-grid, .secondary-door-inner, .audience-grid { gap: 56px; }
   .method-visual { width: min(520px, calc(100% - 34px)); }
   .about-portrait { width: min(520px, 100%); justify-self: end; }
+  .services-image { width: min(100%, 560px); }
+  .order-visual { width: min(560px, 100%); }
   .order-note { width: min(560px, 100%); }
   .testimonial-grid { grid-template-columns: 1fr; gap: 62px; }
   .next-steps ol { grid-template-columns: repeat(2, 1fr); }
