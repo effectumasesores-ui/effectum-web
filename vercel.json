@@ -2,6 +2,33 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/aviso-legal.html/",
+      "destination": "/aviso-legal.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/politica-de-privacidad/",
+      "destination": "/privacidad.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/politica-de-cookies/",
+      "destination": "/cookies.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/aviso-legal/",
+      "destination": "/aviso-legal.html",
+      "statusCode": 301
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
