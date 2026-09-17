@@ -56,6 +56,18 @@
     {
       "src": "^/wp-content/uploads(?:/.*)?$",
       "status": 410
+    },
+    {
+      "src": "^/wp-[^/]+\\.php$",
+      "status": 410
+    },
+    {
+      "src": "^/wp-json/elementskit/v1(?:/.*)?$",
+      "status": 410
+    },
+    {
+      "src": "^/wp-includes(?:/.*)?$",
+      "status": 410
     }
   ]
 }
