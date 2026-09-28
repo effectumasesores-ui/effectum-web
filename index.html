@@ -354,7 +354,13 @@
             </div>
             <label>Tipo de consulta<select name="tipo_consulta"><option>Autónomo</option><option>Empresa / SL</option><option>Cambio de gestoría</option><option>Puesta en orden</option><option>Renta / particular</option><option>Extranjería / nacionalidad</option><option>Otro</option></select></label>
             <label>Cuéntanos brevemente<textarea required name="mensaje" rows="4"></textarea></label>
-            <label class="consent" for="privacy-consent"><input id="privacy-consent" required type="checkbox" name="privacidad"><span>He leído la <a href="privacidad.html">política de privacidad</a>.</span></label>
+            <div class="form-privacy" id="privacy-basic-info">
+              <p><strong>Responsable:</strong> ALFREDO LUGO AZOCAR.</p>
+              <p><strong>Finalidad:</strong> Atender sus consultas y/o solicitudes.</p>
+              <p><strong>Derechos:</strong> acceso, rectificación y supresión.</p>
+              <p>Información adicional en la <a href="privacidad.html">Política de Privacidad</a>.</p>
+            </div>
+            <label class="consent" for="privacy-consent"><input id="privacy-consent" required type="checkbox" name="privacidad" aria-describedby="privacy-basic-info"><span>He leído y acepto la información básica de protección de datos.</span></label>
             <button class="button button-primary" type="submit">Enviar consulta <span aria-hidden="true">↗</span></button>
             <p class="form-note" data-form-status aria-live="polite">No envíes documentación fiscal, bancaria, identificativa o especialmente sensible a través de este formulario. Si necesitamos documentación, te indicaremos el canal adecuado.</p>
           </form>

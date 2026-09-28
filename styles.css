@@ -668,6 +668,11 @@ h2 {
 .lead-form textarea { min-height: 120px; resize: vertical; }
 .lead-form input:focus, .lead-form select:focus, .lead-form textarea:focus { border-color: var(--teal); outline: 2px solid rgba(81,109,115,.18); }
 
+.form-privacy { margin: -2px 0 0; border-inline-start: 2px solid var(--gold); padding: 14px 16px; background: rgba(81,109,115,.06); color: var(--graphite); font-size: 12px; line-height: 1.55; }
+.form-privacy p { margin: 0; }
+.form-privacy p + p { margin-top: 4px; }
+.form-privacy strong { color: var(--ink); font-weight: 700; }
+.form-privacy a { border-bottom: 1px solid currentColor; }
 .consent { display: flex; min-height: 44px; gap: 11px; align-items: center; letter-spacing: 0 !important; line-height: 1.5; text-transform: none !important; }
 .consent input { width: 20px; min-height: 20px; margin: 0; }
 .consent a { border-bottom: 1px solid currentColor; }
